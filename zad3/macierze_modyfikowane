@@ -1,0 +1,45 @@
+def dodawanie_macierzy(macierz_1, macierz_2):
+    try:
+        macierz_3 = [[0] * len(macierz_1[0]) for _ in range(len(macierz_1))]
+        for i in range(len(macierz_1)):
+            for j in range(len(macierz_1[0])):
+                macierz_3[i][j] = macierz_1[i][j] + macierz_2[i][j]
+        return macierz_3
+    except:
+        print("Błąd wymiaru macierzy")
+        return
+
+def odejmowanie_macierzy(macierz_1, macierz_2):
+    try:
+            macierz_3 = [[0] * len(macierz_1[0]) for _ in range(len(macierz_1))]
+            for i in range(len(macierz_1)):
+                for j in range(len(macierz_1[0])):
+                    macierz_3[i][j] = macierz_1[i][j] - macierz_2[i][j]
+            return macierz_3
+    except:
+        print("Błąd wymiaru macierzy")
+
+def mnozenie_macierzy(macierz_1, macierz_2):
+    try:
+        if len(macierz_1[0]) == len(macierz_2):
+            macierz_3 = [[0] * len(macierz_2[0]) for _ in range(len(macierz_1))]
+            for i in range(len(macierz_1)):
+                for j in range(len(macierz_2[0])):
+                    for k in range(len(macierz_2)):
+                        macierz_3[i][j] += macierz_1[i][k] * macierz_2[k][j]
+            return macierz_3
+        elif len(macierz_1[0]) != len(macierz_2):
+            print("Błąd wymiaru macierzy")
+
+    except:
+        print("Błąd wymiaru macierzy")
+
+
+def transpozycja_macierzy(macierz):
+        macierz_nowa = [[0] * len(macierz) for _ in range(len(macierz[0]))]
+        for i in range(len(macierz)):
+            for j in range(len(macierz[0])):
+                macierz_nowa[j][i] = macierz[i][j]
+        return macierz_nowa
+
+
