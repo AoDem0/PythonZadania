@@ -1,0 +1,16 @@
+def suma_z_pliku(nazwa):
+    try:
+        with open(nazwa, 'r') as file:
+            czytnik = file.readlines()
+            suma = 0
+            for row in czytnik:
+                suma += int(row)
+            print(f'Suma dla pliku {nazwa} to: {suma}')               
+    except:
+        print(f'Błąd dla pliku o nazwie {nazwa}')
+
+plik1 = 'liczby.csv'
+plik2 = 'liczenie.csv'
+
+suma_z_pliku(plik1)
+suma_z_pliku(plik2)
