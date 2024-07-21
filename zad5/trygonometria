@@ -1,0 +1,28 @@
+import math
+
+def sinus(kat):
+    radiany = math.radians(kat)
+    sinus_kat = math.sin(radiany)
+    print(f"Sinus kąta {kat}: {sinus_kat:.2f}")
+
+
+def cosinus(kat):
+    radiany = math.radians(kat)
+    cosinus_kat = math.cos(radiany)
+    print(f"Cosinus kąta {kat}: {cosinus_kat:.2f}")
+
+
+def tangens(kat):
+    radiany = math.radians(kat)
+    tan_kat = math.tan(radiany)
+    print(f"Tangens kąta {kat}: {tan_kat:.2f}")
+
+
+def cotangens(kat):
+    radiany = math.radians(kat)
+    tangens_kat = math.tan(radiany)
+    if tangens_kat == 0:
+        print("Nie można obliczyć cotangensa")
+    else:
+        cotangens_kat = 1 / tangens_kat
+        print(f"Cotangens kąta {kat}: {cotangens_kat:.2f}")
