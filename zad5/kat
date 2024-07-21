@@ -1,0 +1,26 @@
+import trigonometria
+
+kat1 = 30
+kat2 = 60
+kat3 = 90
+kat4 = 180
+#dla kąta 1
+trigonometria.sinus(kat1)
+trigonometria.cosinus(kat1)
+trigonometria.tangens(kat1)
+trigonometria.cotangens(kat1)
+#dla kąta 2
+trigonometria.sinus(kat2)
+trigonometria.cosinus(kat2)
+trigonometria.tangens(kat2)
+trigonometria.cotangens(kat2)
+#dla kąta 3
+trigonometria.sinus(kat3)
+trigonometria.cosinus(kat3)
+trigonometria.tangens(kat3)
+trigonometria.cotangens(kat3)
+#dla kąta 4
+trigonometria.sinus(kat4)
+trigonometria.cosinus(kat4)
+trigonometria.tangens(kat4)
+trigonometria.cotangens(kat4)
