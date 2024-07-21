@@ -1,0 +1,9 @@
+def gen(mojeSlowo):
+    with open('tekst.txt', 'r') as file:
+        czytnik = file.readlines()
+        for row in czytnik:
+            if mojeSlowo in row:
+                yield row
+
+for linia in gen('kot'):
+    print(linia, end='')
