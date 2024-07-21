@@ -1,0 +1,14 @@
+liczby = [0, 1]
+
+def gen(n):
+    for x in range(100):
+        if x > 2 and x < n:
+            i = len(liczby) - 1
+            j = i - 1
+            nowa = liczby[i] + liczby[j]
+            if nowa < n:
+                liczby.append(nowa)
+    print(liczby)
+
+#test
+gen(20)
