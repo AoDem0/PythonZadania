@@ -14,3 +14,5 @@ plik2 = 'liczenie.csv'
 
 suma_z_pliku(plik1)
 suma_z_pliku(plik2)
+
+#aby czytanie z pliku działało plik liczby.csv musi znajdować się w tym samym folderze co plik zadanie
