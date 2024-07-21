@@ -1,0 +1,11 @@
+def sekundy_na_minuty(x):
+    minuty = x / 60
+    print(f"{x} sekund to {minuty} minut")
+
+def minuty_na_godziny(x):
+    godziny = x / 60
+    print(f"{x} minut to {godziny} godzin")
+
+def godziny_na_dni(x):
+    dni = x / 24
+    print(f"{x} godzin to {dni} dni")
