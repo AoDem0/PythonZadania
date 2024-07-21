@@ -41,7 +41,19 @@ zwracać zawartość pliku.
 odpowiednie typy (np. int, float, str). Obsłuż wyjątki dla nieprawidłowych
 danych wejściowych oraz konwersji typów.
 
+12. Napisz funkcję generatora, która tworzy ciąg liczb Fibonacciego do podanej
+liczby n.
 
+13. Napisz listę składaną, która tworzy listę zawierającą wszystkie liczby
+podzielne przez 5 w zakresie od 1 do 100.
+
+14. Napisz generator, który wczytuje plik tekstowy zawierający wiele wierszy i
+zwraca wiersze zawierające podany ciąg znaków.
+
+15. Napisz listę składaną, która tworzy listę zawierającą długości słów w podanym
+tekście, pomijając słowa krótsze niż 4 znaki.
+
+16. Napisz generator, który zwraca liczby pierwsze w określonym zakresie.
 
 
 
