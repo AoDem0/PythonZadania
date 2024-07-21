@@ -1,0 +1,16 @@
+
+def wyszukaj_plik(nazwa):
+    try:
+        with open(nazwa, 'r') as file:
+           zawartosc = file.read()       
+           print(zawartosc) 
+           return zawartosc       
+    except FileNotFoundError:
+        print('Błąd')
+        return None
+
+while True:
+    plik1 = input('Podaj nazwę pliku: ')
+    zawartosc_pliku_1 = wyszukaj_plik(plik1)
+    if zawartosc_pliku_1 is not None:
+        break
