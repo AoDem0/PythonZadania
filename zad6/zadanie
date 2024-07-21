@@ -1,0 +1,45 @@
+def dodawanie(x, y):
+    try:
+        x1 = int(x)
+        y1 = int(y)
+        wynik = x1 + y1
+        print(wynik)
+    except ValueError:
+        print('Nie można wykonać dodawania dla tych danych')
+
+def odejmowanie(x, y):
+    try:
+        x1 = int(x)
+        y1 = int(y)
+        wynik = x1 - y1
+        print(wynik)
+    except ValueError:
+        print('Nie można wykonać odejmowania dla tych danych')
+
+def mnozenie(x, y):
+    try:
+        x1 = int(x)
+        y1 = int(y)
+        wynik = x1 * y1
+        print(wynik)
+    except ValueError:
+        print('Nie można wykonać mnożenia dla tych danych')
+
+
+def dzielenie(x, y):
+    try:
+        x1 = int(x)
+        y1 = int(y)
+        wynik = x1 / y1
+        print(wynik)
+    except (ValueError, ZeroDivisionError):
+        print('Nie można wykonać dzielenia dla tych danych')
+
+print('Podaj liczby dla których mam zrobić działania:')
+x = input('Podaj pierwszą liczbę: ')
+y = input('Podaj drugą liczbe: ')
+
+dodawanie(x, y)
+odejmowanie(x, y)
+mnozenie(x, y)
+dzielenie(x, y)
