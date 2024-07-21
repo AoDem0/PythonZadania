@@ -1,0 +1,14 @@
+from datetime import datetime, timedelta
+
+#zmienna z inputu daty
+naszaData = input('Podaj date w formacie RRRR-mm-dd GG:mm:ss: ')
+przekonwertowanaData = datetime.strptime(naszaData, "%Y-%m-%d %H:%M:%S")
+#print(przekonwertowanaData)
+
+dataUnix = '1970-01-01 00:00:00'
+przekonwertowanaDataUnix = datetime.strptime(dataUnix, "%Y-%m-%d %H:%M:%S")
+#print(przekonwertowanaDataUnix)
+
+roznica = przekonwertowanaData - przekonwertowanaDataUnix
+roznicaSekundy = int(roznica.total_seconds())
+print(f'Od czasu UNIX do Twojej daty mineło {roznicaSekundy} sekund')
