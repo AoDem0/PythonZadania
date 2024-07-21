@@ -19,3 +19,37 @@ innego programu i użyj go do analizy przykładowej listy danych.
 trygonometryczne (sinus, cosinus, tangens, cotangens) dla podanych kątów (w
 stopniach lub radianach). Zaimportuj ten moduł do innego programu i użyj go do
 obliczenia wartości trygonometrycznych dla przykładowych kątów.
+
+6. Napisz program, który wczytuje dwie liczby od użytkownika i wykonuje operacje
+matematyczne (dodawanie, odejmowanie, mnożenie, dzielenie) z obsługą wyjątków
+dla nieprawidłowych danych wejściowych oraz dzielenia przez zero.
+
+7. Napisz funkcję, która wczytuje liczbę od użytkownika i oblicza jej pierwiastek
+kwadratowy. Obsłuż wyjątki dla ujemnych wartości oraz nieprawidłowych danych
+wejściowych.
+
+8. Napisz program, który wczytuje plik tekstowy zawierający listę liczb (jedna
+liczba w każdym wierszu) i oblicza ich sumę. Obsłuż wyjątki dla braku pliku,
+nieprawidłowych danych wejściowych oraz innych błędów podczas odczytu pliku.
+
+9. Stwórz funkcję, która prosi użytkownika o wprowadzenie nazwy pliku, a następnie
+próbuje go otworzyć. Jeśli plik nie istnieje, obsłuż wyjątek FileNotFoundError
+i poproś użytkownika o wprowadzenie nazwy pliku ponownie. Funkcja powinna
+zwracać zawartość pliku.
+
+11. Napisz program, który wczytuje dane od użytkownika i przekształca je na
+odpowiednie typy (np. int, float, str). Obsłuż wyjątki dla nieprawidłowych
+danych wejściowych oraz konwersji typów.
+
+
+
+
+
+
+
+
+
+
+
+
+
