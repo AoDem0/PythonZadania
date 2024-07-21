@@ -1,0 +1,13 @@
+import math
+
+def pierwiastek(x):
+    try:
+        x = int(x)
+        pierwiastek = math.sqrt(x)
+        print(f'Pierwiastek kwadratowy {x} to {pierwiastek: .2f}')
+    except ValueError:
+        print('Nie można obliczyć pierwiastka')
+
+
+x = input("Podaj liczbe: ")
+pierwiastek(x)
