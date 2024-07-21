@@ -1,0 +1,16 @@
+def sortowanie_rokiem(lista):
+    posortowana = sorted(lista, key = lambda x: x["rok"])
+    print(f'Dane posortowane rokiem: {posortowana}')
+    
+
+def filtr_ponad_5k(lista):
+    filtrowane = [element for element in lista if int(element.get('zarobione pieniądze', 0).replace(" ", "")) > 5000]
+    print(f'Dane gdzie zarobione pieniadze > 5000 {filtrowane}')
+
+def grupowanie_latami(lista, rok):
+    dane_roku =[]
+    for element in lista:
+        if element['rok'] == rok:
+            dane_roku.append(element)
+    print(f'Dane dla roku {rok}:')
+    print(dane_roku)
