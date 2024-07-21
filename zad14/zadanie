@@ -1,0 +1,6 @@
+tekst = "boka chan ga oshiete kureta ironna mita meni narera apuri nandatte dore dore"
+#         4     4   2    7      6      6      4    4     6     5       8     4     4
+#sprawdzenie ręczne długości słów ^^^
+
+slowaTekstu = [len(x) for x in tekst.split() if len(x) > 4]
+print(slowaTekstu)
