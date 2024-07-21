@@ -1,0 +1,26 @@
+import random
+import string
+from collections import Counter
+
+#plik z hasłami musi znajdować się w tym samym folderze do poprawnego działania kodu
+
+def zapis(tekst):
+    with open('generowane_hasla.txt', 'a') as file:
+        file.write(tekst + '\n')
+
+
+def randomoweHaslo(x):
+    randomCiag = [random.choice(string.ascii_letters + string.digits) for _ in range(x)]
+    randomCiagStr = ''.join(randomCiag)
+    iloscDuzych(randomCiagStr, x)
+
+def iloscDuzych(tekst, x):
+    upper_counter = Counter(char for char in tekst if char.isupper())
+    if sum(upper_counter.values()) > 3:
+        randomoweHaslo(x)
+    else:
+        zapis(tekst)
+        print(f'Wygenerowane haslo to {tekst}')
+
+
+randomoweHaslo(10)
