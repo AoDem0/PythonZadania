@@ -1,0 +1,42 @@
+
+def na_int(dane):
+    try:
+        nowe = int(dane)
+        print('Można zmienić na int')
+    except:
+        print('Nie można zmienić na int')
+
+
+def na_float(dane):
+    try:
+        nowe = float(dane)
+        print('Można zmienić na float')
+    except:
+        print('Nie można zmienić na float')
+
+
+def na_str(dane):
+    try:
+        nowe = str(dane)
+        print('Można zmienić na str')
+    except:
+        print('Nie można zmienić na str')
+
+x = 'Kot'
+y = 14
+z = 1.7
+
+print('Dla x')
+na_int(x)
+na_float(x)
+na_str(x)
+
+print('Dla y')
+na_int(y)
+na_float(y)
+na_str(y)
+
+print('Dla z')
+na_int(z)
+na_float(z)
+na_str(z)
