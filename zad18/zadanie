@@ -1,0 +1,13 @@
+import requests, json
+
+def pogoda(miasto, klucz):
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={miasto}&appid={klucz}&units=metric"
+    odpowiedz = requests.get(url)
+    dane = odpowiedz.json()
+    temperatura = dane["main"]["temp"]
+    print(f"Aktualna temperatura w {miasto} wynosi {temperatura} stopni Celsjusza.")
+
+
+miasto = input('Podaj nazwe miasta:')
+klucz = "eca2e7be904e7ec323d41d330957674d"
+pogoda(miasto, klucz)
