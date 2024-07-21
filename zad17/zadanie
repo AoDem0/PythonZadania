@@ -1,0 +1,24 @@
+import math
+
+def czyPierwsza(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    for i in range(5, int(math.sqrt(n)) + 1, 6):
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+    return True
+    
+def pierwszaV4(x):
+    if czyPierwsza(x):
+        print(f"{x} jest liczbą pierwszą.")
+    else:
+        print(f"{x} nie jest liczbą pierwszą.")
+
+#test
+mojaLiczba = int(input('Podaj liczbe: '))
+pierwszaV4(mojaLiczba)
+
