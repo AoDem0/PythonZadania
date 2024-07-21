@@ -1,0 +1,25 @@
+import macierze_modyfikowane
+
+
+#przykładowe macierze i działania na nich które nie zadziałają przez zły rozmiar
+x = [[1,2], [1, 2]]
+
+y = [[1], [1]]
+
+z = [[2, 2]]
+
+
+
+wynik_dodawania = macierze_modyfikowane.dodawanie_macierzy(x, y)
+if wynik_dodawania is not None:
+    print(wynik_dodawania)
+
+wynik_odejmowania = macierze_modyfikowane.odejmowanie_macierzy(x, y)
+if wynik_odejmowania is not None:
+    print(wynik_odejmowania)
+
+
+wynik_mnozenia = macierze_modyfikowane.mnozenie_macierzy(x, z)
+if wynik_mnozenia is not None:
+    print(wynik_mnozenia)
+
