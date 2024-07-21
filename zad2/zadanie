@@ -1,0 +1,8 @@
+import czas
+
+x = 48
+y = 10
+z = 50
+czas.sekundy_na_minuty(x) 
+czas.minuty_na_godziny(y)
+czas.godziny_na_dni(z)
