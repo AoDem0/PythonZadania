@@ -1,0 +1,2 @@
+# PythonZadania
+proste zadania python
