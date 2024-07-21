@@ -1,0 +1,15 @@
+import analiza_danych
+
+lista_danych = [
+    {"rok": 2010, "zarobione pieniądze": "6 420"},
+    {"rok": 2008, "zarobione pieniądze": "1 520"},
+    {"rok": 2009, "zarobione pieniądze": "3 030"},
+    {"rok": 2012, "zarobione pieniądze": "10 533"},
+    {"rok": 2012, "zarobione pieniądze": "10 533"},
+    {"rok": 2012, "zarobione pieniądze": "8 200"},
+    {"rok": 2010, "zarobione pieniądze": "3 500"},
+]
+
+analiza_danych.sortowanie_rokiem(lista_danych)
+analiza_danych.filtr_ponad_5k(lista_danych)
+analiza_danych.grupowanie_latami(lista_danych, 2012)
