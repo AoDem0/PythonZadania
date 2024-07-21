@@ -53,7 +53,20 @@ zwraca wiersze zawierające podany ciąg znaków.
 14. Napisz listę składaną, która tworzy listę zawierającą długości słów w podanym
 tekście, pomijając słowa krótsze niż 4 znaki.
 
-15. Napisz generator, który zwraca liczby pierwsze w określonym zakresie.
+15. Napisz program, który pobiera od użytkownika datę i godzinę w formacie RRRR-MMDD
+GG:MM:SS i zwraca ją w formacie UNIX timestamp. Użyj modułu datetime .
+
+16. Stwórz program, który generuje i zapisuje do pliku losowe hasła o określonej
+długości, składające się z małych liter, 3. dużych liter i cyfr. Użyj modułu
+random i string .
+
+17. Napisz program, który pobiera od użytkownika ciąg znaków i sprawdza, czy jest
+to liczba pierwsza. Użyj modułu math .
+
+18. Stwórz program, który pobiera od użytkownika nazwę miasta i zwraca informacje o
+pogodzie dla tego miasta korzystając z API (np. OpenWeatherMap API). Użyj
+modułu requests .
+
 
 
 
