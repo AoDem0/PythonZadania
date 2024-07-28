@@ -1,14 +1,14 @@
 liczby = [0, 1]
 
 def gen(n):
-    for x in range(100):
-        if x > 2 and x < n:
-            i = len(liczby) - 1
-            j = i - 1
-            nowa = liczby[i] + liczby[j]
-            if nowa < n:
-                liczby.append(nowa)
+    while True:                             #petla dopoki n < od mojej liczby
+        i = len(liczby) - 1                 #ostatnia wartość  w liczby
+        j = i - 1                           #przedostatnia wartość w liczby
+        nowa = liczby[i] + liczby[j]        #dodaje ostatnią i przedosttnią wartość
+        if nowa >= n:                       #jezeli n przekroczy wartosc to koniec petli while
+            break
+        liczby.append(nowa)                 #dodanie ostatniej liczby while do listy
     print(liczby)
 
 #test
-gen(20)
+gen(1000)
